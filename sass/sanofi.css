@@ -187,6 +187,19 @@
     height: 3.6em;
   }
 }
+#es-rc.es-rc .es-features .title-top {
+  height: 2.6em;
+}
+@media (min-width: 768px) {
+  #es-rc.es-rc .es-features .title-top {
+    height: 4.6em;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc.es-rc .es-features .title-top {
+    height: 3.6em;
+  }
+}
 #es-rc.es-rc .es-features__desc {
   font-family: "Montserrat";
   font-size: 11px !important;
