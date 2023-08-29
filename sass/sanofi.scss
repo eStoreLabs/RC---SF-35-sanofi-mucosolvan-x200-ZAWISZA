@@ -196,44 +196,50 @@ $text-black: #000;
     }
   }
   .es-features {
-    &__box {
-      
-    }
+    
     &__title {
       font-size: 15px !important;
       font-family: $title;
       color: $text-blue !important;
-      max-width: 210px !important;
+      //max-width: 210px !important;
+      line-height: normal;
       font-weight: 700 !important;
+      height: 3.6em;
+      @media (min-width: 381px) {
+        height: 2.6em;
+      }
       @media (min-width: 576px) {
         font-size: 22px!important;
       }
-    }
-    .height {
-        @media (min-width: 576px) {
-          height: 3.5em!important;
-        }
+      @media (min-width: 768px) {
+        height: 4.6em;
       }
+      @media (min-width: 992px) {
+        height: 3.6em;
+      }
+    }
+    
     &__desc {
       font-family: $regular;
       font-size: 11px !important;
       font-weight: 500;
       color: $text-black !important;
-      max-width: 210px !important;
+      //max-width: 210px !important;
       line-height: normal;
       @media (min-width: 576px) {
         font-size: 16px!important;
       }
     }
-    &__mobileDdivider {
-      display: none;
-    }
-    &__divider {
-      display: none;
-    }
+    
   }
   .es-description {
     background-image: url('../images/description-bg.png');
+    &__box {
+      height: 510px;
+      @media (min-width: 992px) {
+        height: unset;
+      }
+    }
     &__title {
       width: 100%;
       text-align: center !important;
@@ -368,6 +374,7 @@ $text-black: #000;
   } 
   .es-dose {
     background-color: $text-blue;
+    line-height: normal;
     & table {
       padding: 0 !important;
       margin: 0 !important;
@@ -553,7 +560,10 @@ $text-black: #000;
         height: 41px;
       }
       &--4 {
-        height: 65px;
+        height: 89px;
+        @media (min-width: 992px) {
+          height: 65px;
+        }
       }
       &--5 {
         height: 41px;
@@ -728,13 +738,7 @@ $text-black: #000;
     }
   }  
 }
-@media (min-width:424px) {
-  .es-features {
-    &__mobileDdivider {
-      display: block !important;
-    }
-  }
-}
+
 @media (min-width:440px) {
   .es-kv {
     &__text{
@@ -944,11 +948,7 @@ $text-black: #000;
     }
 
   } 
-  .es-features {
-    &__divider {
-      display: block !important;
-    }
-  } 
+  
   .es-why {
     &__text {
       &--1 {
@@ -1003,11 +1003,7 @@ $text-black: #000;
       }      
     }
   }
-  .es-features {
-    &__divider {
-      display: none !important;
-    }
-  } 
+   
   .es-why {
     &__text {
       &--1 {
