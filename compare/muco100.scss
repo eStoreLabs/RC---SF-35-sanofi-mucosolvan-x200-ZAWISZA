@@ -139,7 +139,7 @@ $text-black: #000;
       text-transform: uppercase;
       font-weight: 900;
       transform: rotate(-3deg);
-      margin-bottom: 6px !important;
+      margin-bottom: 10px !important;
       border-radius: 5px;
       font-family: $title;
       line-height: 0.8;
@@ -159,14 +159,14 @@ $text-black: #000;
 
       &--middle {
         line-height: 0.8;
-        margin-left: 19px;
+        margin-left: 5px;
       }
 
       &--blue {
         background-color: $main-color;
         transform: rotate(-1.5deg);
         line-height: 1.3;
-        margin-left: 120px;
+        margin-left: 20px;
       }
     }
 
@@ -180,40 +180,44 @@ $text-black: #000;
       color: $text;
       width: -moz-max-content;
       width: max-content;
-      padding-right: 10px !important;
+      padding: 0 5px !important;
       text-transform: uppercase;
       font-weight: 900;
       transform: rotate(-3deg);
-      margin-bottom: 10px !important;
-      font-size: 25px;
-      border-radius: 5px;
+      margin-bottom: 5px !important;
+      font-size: 15px;
+      border-radius: 2px;
       font-family: $title;
-      line-height: 0.8;
+
+      & sup {
+        font-size: 8px !important;
+        position: relative;
+        top: -4px;
+      }
 
       & p {
+        // margin: 10px;
         letter-spacing: 1px;
       }
 
       &--red {
         background-color: $secondary-color;
-        font-size: 18px;
-        padding-left: 25px;
-        line-height: 1.3;
+        font-size: 12px;
+        margin: 0;
+        line-height: 1.5;
       }
 
       &--middle {
-        line-height: 0.7;
+        line-height: 0.5;
         margin-left: 15px;
-        transform: rotate(-1.5deg);
       }
 
-      &--number {
-        position: absolute;
-        top: -11%;
-        left: -6%;
-        transform: translateY(-50%);
-        font-size: 38px;
+      &--blue {
+        background-color: $main-color;
         transform: rotate(-1.5deg);
+        font-size: 12px;
+        line-height: 1.5;
+        margin-left: 40px;
       }
     }
   }
@@ -270,7 +274,6 @@ $text-black: #000;
         font-size: 16px !important;
       }
     }
-
   }
 
   .es-description {
@@ -455,13 +458,14 @@ $text-black: #000;
     }
 
     &__even {
-      background-color: $main-light !important;
+      background-color: $main-light-60 !important;
     }
 
     &__box {
       padding: 0 !important;
       background-color: $main-dark;
       border-radius: 15px;
+
       @media (min-width: 992px) {
         height: 394px;
       }
@@ -505,6 +509,7 @@ $text-black: #000;
       border: none;
 
     }
+
     & tbody {
       height: 396px;
     }
@@ -655,10 +660,9 @@ $text-black: #000;
       height: 271px!important;
       padding-top: 50px;
     }
-
     &__badge {
       position: absolute;
-     top: 0%;
+      top: 0%;
       left: 14%;
       color: $text;
       width: max-content;
@@ -681,6 +685,7 @@ $text-black: #000;
         top: 13%;
         text-align: left;
       }
+
     }
 
     &__row {
@@ -691,25 +696,30 @@ $text-black: #000;
       font-weight: 500;
       color: $text;
       font-size: 14px !important;
+
       @media (min-width: 567px) {
         padding-left: 32px !important;
       }
 
       &--1 {
         height: 82px;
+        //display: block;
       }
 
       &--2 {
         height: 64px;
+        //display: block;
       }
 
       &--3 {
         height: 40px;
+        //display: block;
       }
 
       &--4 {
         height: 88px;
 
+        //display: block;
         @media (min-width: 992px) {
           height: 64px;
         }
@@ -717,7 +727,9 @@ $text-black: #000;
 
       &--5 {
         height: 40px;
+        //display: block;
       }
+
       &--6 {
         height: 84.59px;
         //display: block;
@@ -737,6 +749,7 @@ $text-black: #000;
       &--big {
         max-height: 240px;
       }
+
     }
 
     & table {
@@ -744,7 +757,9 @@ $text-black: #000;
       margin: 0 !important;
       border: none;
       border-color: transparent !important;
+
     }
+
     & thead {
       height: 271px;
     }
@@ -907,40 +922,17 @@ $text-black: #000;
   *::-webkit-scrollbar-thumb:active {
     background-color: #A72028;
   }
+
+
 }
 
 @media (min-width:400px) {
   .es-kv {
     &__text {
-      font-size: 31px !important;
+      font-size: 27px !important;
 
       &--red {
-        font-size: 26px !important;
-      }
-    }
-
-    &__subtitle {
-      bottom: 10px !important;
-      left: 20px !important;
-    }
-
-    &__text1 {
-      font-size: 28px !important;
-      line-height: 0.8;
-
-      &--red {
-        font-size: 18px !important;
-        padding-left: 25px !important;
-      }
-
-      &--middle {
-        margin-left: 40px !important;
-      }
-
-      &--number {
-        top: -12%;
-        left: -19% !important;
-        font-size: 40px !important;
+        font-size: 22px !important;
       }
     }
   }
@@ -958,17 +950,51 @@ $text-black: #000;
   }
 }
 
+
 @media (min-width:440px) {
   .es-kv {
     &__text {
-      font-size: 37px !important;
+      font-size: 31px !important;
 
       &--red {
-        font-size: 30px !important;
+        font-size: 26px !important;
+        line-height: 1.3;
+      }
+
+      &--middle {
+        line-height: 0.8;
+        margin-left: 5px;
+      }
+
+      &--blue {
+        line-height: 1.3;
+        margin-left: 20px;
       }
     }
 
+    &__text1 {
+      font-size: 20px !important;
+      line-height: 0.8;
 
+      & sup {
+        font-size: 10px !important;
+        top: -10px !important;
+      }
+
+      &--red {
+        font-size: 15px !important;
+        line-height: 1.3;
+      }
+
+      &--middle {
+        line-height: 0.5;
+      }
+
+      &--blue {
+        font-size: 15px;
+        line-height: 1.3;
+      }
+    }
   }
 
   .es-why {
@@ -987,35 +1013,10 @@ $text-black: #000;
 @media (min-width:500px) {
   .es-kv {
     &__text {
-      font-size: 50px !important;
+      font-size: 39px !important;
 
       &--red {
-        font-size: 38px !important;
-      }
-    }
-
-    &__subtitle {
-      bottom: 15px !important;
-      left: 20px !important;
-    }
-
-    &__text1 {
-      font-size: 33px !important;
-      line-height: 0.8;
-
-      &--red {
-        font-size: 22px !important;
-        padding-left: 35px !important;
-      }
-
-      &--middle {
-        margin-left: 40px !important;
-      }
-
-      &--number {
-        top: -12%;
-        left: -16% !important;
-        font-size: 55px !important;
+        font-size: 34px !important;
       }
     }
   }
@@ -1034,13 +1035,6 @@ $text-black: #000;
 }
 
 @media (min-width:540px) {
-  .es-kv {
-    &__text {
-      &--blue {
-        margin-left: 120px !important;
-      }
-    }
-  }
 
   .es-why {
     &__text {
@@ -1073,22 +1067,6 @@ $text-black: #000;
 
 @media (min-width:576px) {
   .es-kv {
-    &__title {
-      top: 25% !important;
-      left: 15px !important;
-    }
-
-    &__text {
-      font-size: 33px !important;
-
-      &--red {
-        font-size: 25px !important;
-      }
-
-      &--blue {
-        margin-left: 20px !important;
-      }
-    }
 
     &__mobile {
       display: none !important;
@@ -1098,28 +1076,27 @@ $text-black: #000;
       display: block !important;
     }
 
-    &__subtitle {
-      bottom: 32px !important;
-      left: 26px !important;
-    }
-
     &__text1 {
-      font-size: 25px !important;
+      font-size: 20px !important;
       line-height: 0.8;
 
+      & sup {
+        font-size: 10px !important;
+        top: -10px !important;
+      }
+
       &--red {
-        font-size: 20px !important;
-        padding-left: 30px !important;
+        font-size: 15px !important;
+        line-height: 1.3;
       }
 
       &--middle {
-        margin-left: 40px !important;
+        line-height: 0.5;
       }
 
-      &--number {
-        top: -12%;
-        left: -17% !important;
-        font-size: 50px !important;
+      &--blue {
+        font-size: 15px;
+        line-height: 1.3;
       }
     }
   }
@@ -1161,39 +1138,48 @@ $text-black: #000;
 @media (min-width:768px) {
   .es-kv {
     &__text {
-      font-size: 45px !important;
+      font-size: 60px !important;
 
       &--red {
-        font-size: 36px !important;
-      }
-    }
-
-    &__subtitle {
-      bottom: 32px !important;
-      left: 26px !important;
-    }
-
-    &__text1 {
-      font-size: 40px !important;
-      line-height: 0.8;
-
-      &--red {
-        font-size: 32px !important;
-        padding-left: 45px !important;
+        font-size: 45px !important;
+        margin: 0;
+        line-height: 1.3;
       }
 
       &--middle {
-        margin-left: 40px !important;
+        line-height: 0.8;
+        margin-left: 5px;
       }
 
-      &--number {
-        top: -12%;
-        left: -11% !important;
-        font-size: 75px !important;
+      &--blue {
+        line-height: 1.3;
+        margin-left: 20px;
       }
-
     }
 
+    &__text1 {
+      font-size: 25px !important;
+      line-height: 0.8;
+
+      & sup {
+        font-size: 10px !important;
+        top: -14px !important;
+      }
+
+      &--red {
+        font-size: 20px !important;
+        line-height: 1.3;
+      }
+
+      &--middle {
+        line-height: 0.5;
+      }
+
+      &--blue {
+        font-size: 20px;
+        line-height: 1.3;
+      }
+    }
   }
 
   .es-why {
@@ -1228,36 +1214,37 @@ $text-black: #000;
   }
 
   .es-kv {
-    &__text {
-      font-size: 62px !important;
 
-      &--red {
-        font-size: 50px !important;
-      }
-    }
-
-    &__subtitle {
-      bottom: 67px !important;
-      left: 33px !important;
+    &__title {
+      top: 30px;
+      left: 30px;
     }
 
     &__text1 {
-      font-size: 50px !important;
+      font-size: 45px !important;
       line-height: 0.8;
 
+      & sup {
+        font-size: 12px !important;
+        position: relative;
+        top: -20px !important;
+      }
+
       &--red {
-        font-size: 38px !important;
-        padding-left: 65px !important;
+        font-size: 35px !important;
+        margin: 0;
+        line-height: 1.3;
       }
 
       &--middle {
-        margin-left: 65px !important;
+        line-height: 0.5;
+        margin-left: 60px !important;
       }
 
-      &--number {
-        top: -13% !important;
-        left: -15% !important;
-        font-size: 98px !important;
+      &--blue {
+        font-size: 35px !important;
+        line-height: 1.3;
+        margin-left: 120px !important;
       }
     }
   }
@@ -1287,7 +1274,7 @@ $text-black: #000;
       overflow: visible !important;
     }
 
-    
+
 
     &__articles {
       &:hover {
