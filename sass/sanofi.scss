@@ -791,16 +791,18 @@ $text-black: #000;
       font-weight: 900;
       transform: rotate(-3deg);
       margin: 0 auto 10px !important;
-      font-size: 22px;
+      font-size: 24px;
       border-radius: 5px;
       font-family: $title;
       line-height: 1.3;
       background-color: $secondary-color;
 
-      @media (min-width: 768px) {
-        font-size: 25px;
+      @media (min-width: 540px) {
+        font-size: 38px;
       }
-
+      @media (min-width: 768px) {
+        font-size: 40px;
+      }
       p {
         letter-spacing: 1px;
       }

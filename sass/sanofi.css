@@ -666,15 +666,20 @@
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 22px;
+  font-size: 24px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.3;
   background-color: #d32833;
 }
+@media (min-width: 540px) {
+  #es-rc.es-rc .es-articles__text {
+    font-size: 38px;
+  }
+}
 @media (min-width: 768px) {
   #es-rc.es-rc .es-articles__text {
-    font-size: 25px;
+    font-size: 40px;
   }
 }
 #es-rc.es-rc .es-articles__text p {
