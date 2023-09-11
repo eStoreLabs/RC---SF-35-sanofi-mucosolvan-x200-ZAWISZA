@@ -388,7 +388,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 }
 #es-rc.es-rc .es-why__text--3 {
   position: relative;
-  left: -4%;
+  /* left: -4%; */
   font-size: 30px;
   transform: rotate(-1.5deg);
   line-height: 1.3;
@@ -1116,4 +1116,15 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   .es-cross__articles:hover {
     background-color: #000 !important;
   }
-}/*# sourceMappingURL=sanofi.css.map */
+}
+@media (max-width: 376px) {
+  #es-rc.es-rc .es-why__text--3 {
+    font-size: 25px;
+  }
+  #es-rc.es-rc .es-description__text1 {
+    font-size: 16px!important;
+  }
+  #es-rc.es-rc .es-description__box {
+    height: unset;
+  }
+}
