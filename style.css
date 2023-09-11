@@ -1075,7 +1075,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
     font-size: 62px !important;
   }
   .es-kv__text--red {
-    font-size: 50px !important;
+    font-size: 46px !important;
   }
   .es-kv__subtitle {
     bottom: 67px !important;
@@ -1099,6 +1099,10 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   }
   .es-why__text--1 {
     left: -35% !important;
+    font-size: 38px!important;
+  }
+  .es-why__text--2 {
+    font-size: 38px!important;
   }
   .es-why__text--3 {
     left: 18% !important;
