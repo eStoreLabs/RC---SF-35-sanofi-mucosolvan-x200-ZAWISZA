@@ -316,6 +316,11 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   color: #fff !important;
   font-weight: 500 !important;
 }
+@media (max-width: 400px) {
+  #es-rc.es-rc .es-description__text3 {
+    font-size: 16px!important;
+  }
+}
 #es-rc.es-rc .es-description__box {
   background: linear-gradient(45deg, rgb(49, 117, 182) 0%, rgb(26, 69, 145) 25%, rgb(26, 69, 145) 75%, rgb(49, 117, 182) 100%);
   box-shadow: 2px 2px 5px 0px rgb(47, 47, 47) !important;
@@ -552,12 +557,12 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 }
 @media (max-width: 376px) {
   #es-rc.es-rc .es-cross__bg {
-    top: 432px;
+    top: 433px;
   }
 }
 @media (min-width: 377px) and (max-width: 440px) {
   #es-rc.es-rc .es-cross__bg {
-    top: 440px;
+    top: 442px;
   }
 }
 @media (min-width: 540px) {
@@ -628,7 +633,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   padding-top: 50px;
 }
 #es-rc.es-rc .es-cross__table {
-  margin-left: 42px;
+  margin-left: 30px;
 }
 #es-rc.es-rc .es-cross__table--titlerow {
   height: 80px!important;
@@ -825,6 +830,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 #es-rc.es-rc .es-footer__text {
   font-family: "Montserrat";
   color: #fff !important;
+  word-wrap: break-word;
 }
 #es-rc.es-rc .es-footer__text--1 {
   font-size: 14px !important;
